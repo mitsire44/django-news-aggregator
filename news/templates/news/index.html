@@ -1,0 +1,5 @@
+<a href="{% url 'scrape' %}" class="btn btn-success">Update News</a>
+{% for headline in news %}
+<a href={{ headline.url }}>{{ headline.title }}</a><br>
+
+{% endfor %}
